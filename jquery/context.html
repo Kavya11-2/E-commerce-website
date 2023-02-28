@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>element selector</title>
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+    <body>
+        <div id="fdiv" class="mdivs">
+            <p>first para in first div</p>
+            <p>second para in first div </p>
+        </div>
+        <button id="b1" onclick="fn1()">click me</button>
+        
+    </body>
+    <!---<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>--->
+    <script src="js/jquery.js"></script>
+    <script>
+        function fn1()
+        {
+           // $("div p").fadeToggle();
+           $("div>p").fadeToggle();
+           // $("div+p").fadeToggle();
+           // $("div-p").fadeToggle();
+        }
+    </script>
+</html>

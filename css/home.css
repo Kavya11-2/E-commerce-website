@@ -1,0 +1,249 @@
+@import 'nav.css';
+@import 'footer.css';
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/header.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+    
+
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align:right;
+    top:80%;
+    white-space: nowrap;
+    font-size: 2em;
+    color: #fff;
+    font-style: italic;
+    animation: anim 5s linear infinite
+}
+@keyframes anim{
+    0%{transform: translateX(102%);}
+    100%{transform: translateX(-250%);}
+
+    }
+
+.product{
+    position:relative;
+    overflow: hidden;
+    padding: 20px 0;
+
+}
+
+.p-img{
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.p-t{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.p-cat{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+    
+
+
+    }
+.p-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x:auto ;
+    scroll-behavior: smooth;
+}
+
+.p-container::-webkit-scrollbar{
+    display:none;
+
+}
+
+.p-card{
+    flex:0 0 auto;
+    width:250px;
+    height:450px;
+    margin-right: 40px;
+}
+
+.dis-tag{
+    position: relative;
+    background:aqua;
+    padding: 10px;
+    border-radius: 5px;
+    color:black;
+    left:170px;
+    top:30px;
+    text-transform: capitalize;
+
+}
+
+.c-btn{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background:#fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor:pointer;
+    color:black;
+    opacity: 0;
+
+}
+
+
+
+.p-card:hover .c-btn{
+    opacity:1;
+}
+
+.c-btn:hover{
+    background: #efefef;
+}
+
+.p-info{
+    width:100%;
+    height:50px;
+    padding-top: 10px;
+
+}
+
+.p-brand{
+    text-transform: uppercase;
+}
+
+.p-s{
+    width:100%;
+    height:20px;
+    line-height:20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.p-s:hover{
+    opacity:1;
+}
+
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+.a-price{
+    margin-left: 40px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-btn,.nxt-btn{
+border: none;
+width: 10vw;
+height: 100%;
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(90deg,rgba(255,255,255,0) 0%,#fff 100%);
+cursor: pointer;
+z-index: 8;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right:0;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,.nxt-btn:hover img{
+    opacity: 1;
+}
+
+.collection-c{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px;
+
+}
+
+.collection{
+    position: relative;
+
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+
+.f-s-c{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.s-link{
+    color:#fff;
+    margin-left: 20px;
+    text-transform: capitalize;
+
+}
+
+.s-link:nth-child(1){
+    margin-left: 0;
+}

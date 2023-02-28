@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>element selector</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h2 class="m1">jquery element selector1</h2>
+        <h2 id="g1">jquery element selector2</h2>
+        <h2>jquery element selector3</h2>
+        <button id="b1" onclick="fn1()">click me</button>
+        
+    </body>
+    <!---<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>--->
+    <script src="js/jquery.js"></script>
+    <script>
+        function fn1()
+        {
+            $("#g1").fadeToggle();
+        }
+    </script>
+</html>
